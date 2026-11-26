@@ -40,11 +40,13 @@ public final class WardenPact {
 
     public WardenPact(IEventBus modBus, ModContainer container) {
         ITEMS.register(modBus);
+        PactEquipment.register(modBus);
         ENTITIES.register(modBus);
         modBus.addListener(WardenPact::attributes);
         modBus.addListener(WardenPact::creativeTab);
         container.registerConfig(ModConfig.Type.SERVER, PactConfig.SPEC);
         NeoForge.EVENT_BUS.register(new SummonHandler());
+        NeoForge.EVENT_BUS.register(new PactEnchantments());
     }
 
     private static void attributes(EntityAttributeCreationEvent event) {
@@ -54,6 +56,10 @@ public final class WardenPact {
     private static void creativeTab(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(SUMMONING_SWORD);
+            PactEquipment.ARMOR.forEach(event::accept);
+        }
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            PactEquipment.TOOLS.forEach(event::accept);
         }
     }
 }

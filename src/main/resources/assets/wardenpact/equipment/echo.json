@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "wardenpact:echo"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "wardenpact:echo"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "wardenpact:echo"
+      }
+    ]
+  }
+}

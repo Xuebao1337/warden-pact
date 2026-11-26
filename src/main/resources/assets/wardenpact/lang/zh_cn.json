@@ -4,5 +4,16 @@
   "entity.wardenpact.owned_warden": "%s 的坚守者",
   "message.wardenpact.cooldown": "召唤冷却：还需 %s 秒",
   "message.wardenpact.no_room": "附近没有足够的安全空间，坚守者需要约 3 格高的空间！",
-  "message.wardenpact.summoned": "友方坚守者已出战！持续 %s 秒，继续挥剑可指挥它攻击。"
+  "message.wardenpact.summoned": "友方坚守者已出战！持续 %s 秒，继续挥剑可指挥它攻击。",
+  "item.wardenpact.echo_helmet": "回响头盔",
+  "item.wardenpact.echo_chestplate": "回响胸甲",
+  "item.wardenpact.echo_leggings": "回响护腿",
+  "item.wardenpact.echo_boots": "回响靴子",
+  "item.wardenpact.echo_pickaxe": "回响镐",
+  "item.wardenpact.echo_axe": "回响斧",
+  "item.wardenpact.echo_shovel": "回响锹",
+  "item.wardenpact.echo_hoe": "回响锄",
+  "enchantment.wardenpact.contract_resonance": "契约共鸣",
+  "enchantment.wardenpact.sculk_guard": "幽匿守护",
+  "enchantment.wardenpact.echo_mining": "回响采掘"
 }

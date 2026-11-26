@@ -4,5 +4,16 @@
   "entity.wardenpact.owned_warden": "%s's Warden",
   "message.wardenpact.cooldown": "Summon ready in %s seconds",
   "message.wardenpact.no_room": "No safe space nearby! A warden needs about 3 blocks of headroom.",
-  "message.wardenpact.summoned": "Friendly warden summoned for %s seconds! Hit another monster to direct it."
+  "message.wardenpact.summoned": "Friendly warden summoned for %s seconds! Hit another monster to direct it.",
+  "item.wardenpact.echo_helmet": "Echo Helmet",
+  "item.wardenpact.echo_chestplate": "Echo Chestplate",
+  "item.wardenpact.echo_leggings": "Echo Leggings",
+  "item.wardenpact.echo_boots": "Echo Boots",
+  "item.wardenpact.echo_pickaxe": "Echo Pickaxe",
+  "item.wardenpact.echo_axe": "Echo Axe",
+  "item.wardenpact.echo_shovel": "Echo Shovel",
+  "item.wardenpact.echo_hoe": "Echo Hoe",
+  "enchantment.wardenpact.contract_resonance": "Contract Resonance",
+  "enchantment.wardenpact.sculk_guard": "Sculk Guard",
+  "enchantment.wardenpact.echo_mining": "Echo Mining"
 }

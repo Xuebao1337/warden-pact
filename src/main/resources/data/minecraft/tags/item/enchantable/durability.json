@@ -1,4 +1,14 @@
 {
   "replace": false,
-  "values": ["wardenpact:summoning_sword"]
+  "values": [
+    "wardenpact:summoning_sword",
+    "wardenpact:echo_helmet",
+    "wardenpact:echo_chestplate",
+    "wardenpact:echo_leggings",
+    "wardenpact:echo_boots",
+    "wardenpact:echo_pickaxe",
+    "wardenpact:echo_axe",
+    "wardenpact:echo_shovel",
+    "wardenpact:echo_hoe"
+  ]
 }

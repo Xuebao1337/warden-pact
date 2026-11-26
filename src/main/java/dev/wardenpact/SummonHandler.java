@@ -64,20 +64,21 @@ public final class SummonHandler {
         if (guardian == null) {
             return;
         }
-        guardian.bind(player, PactConfig.LIFETIME_SECONDS.get() * 20);
+        int lifetimeSeconds = PactEnchantments.summonLifetimeSeconds(player, sword);
+        guardian.bind(player, lifetimeSeconds * 20);
         if (!findSafePosition(level, player, guardian) || !level.addFreshEntity(guardian)) {
             guardian.discard();
             player.sendOverlayMessage(Component.translatable("message.wardenpact.no_room"));
             return;
         }
         guardians.put(playerId, guardian);
-        nextSummon.put(playerId, now + PactConfig.COOLDOWN_SECONDS.get() * 20L);
+        nextSummon.put(playerId, now + PactEnchantments.summonCooldownSeconds(player, sword) * 20L);
         guardian.command(target);
         level.sendParticles(ParticleTypes.SCULK_SOUL, guardian.getX(), guardian.getY() + 1, guardian.getZ(),
                 30, 0.5, 1, 0.5, 0.04);
         level.playSound(null, guardian.blockPosition(), SoundEvents.WARDEN_EMERGE, SoundSource.NEUTRAL, 1, 1);
         player.sendOverlayMessage(Component.translatable("message.wardenpact.summoned",
-                PactConfig.LIFETIME_SECONDS.get()));
+                lifetimeSeconds));
     }
 
     private static boolean findSafePosition(ServerLevel level, ServerPlayer player, FriendlyWarden guardian) {
