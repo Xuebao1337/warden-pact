@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "wardenpact",
+  "version": "${version}",
+  "name": "Warden Pact",
+  "description": "Sword hits summon a friendly warden. Includes echo armor, tools and enchantments.",
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.wardenpact.WardenPact"],
+    "client": ["dev.wardenpact.client.WardenPactClient"]
+  },
+  "mixins": ["wardenpact.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": ">=0.167.0+26.3"
+  }
+}

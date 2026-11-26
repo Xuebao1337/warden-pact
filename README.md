@@ -1,6 +1,8 @@
 
 # 坚守者契约 · Warden Pact
 
+**Fabric 26.3 版**：独立工程位于 [fabric](fabric/README.md)，包含召唤、回响装备和三种附魔。下文安装与配置说明针对 NeoForge 26.2。
+
 Minecraft **Java 版 26.2 / NeoForge 26.2.0.95** 模组。用剑命中敌对生物，召唤一只属于你的友方坚守者助战。**1.1.0** 新增回响盔甲、工具和三种附魔。
 
 ## 安装

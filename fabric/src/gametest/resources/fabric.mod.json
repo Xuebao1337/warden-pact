@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "wardenpacttests",
+  "version": "1.0.0",
+  "name": "Warden Pact Fabric Game Tests",
+  "environment": "*",
+  "entrypoints": {"fabric-gametest": ["dev.wardenpact.test.PactGameTests"]},
+  "depends": {"wardenpact": "*", "fabric-gametest-api-v1": "*"}
+}
