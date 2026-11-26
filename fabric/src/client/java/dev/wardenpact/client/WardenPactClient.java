@@ -9,5 +9,6 @@ public final class WardenPactClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         EntityRendererRegistry.register(WardenPact.FRIENDLY_WARDEN, WardenRenderer::new);
+        EntityRendererRegistry.register(WardenPact.SCULK_MOUNT, SculkMountRenderer::new);
     }
 }

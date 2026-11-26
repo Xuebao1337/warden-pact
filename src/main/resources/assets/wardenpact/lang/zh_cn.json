@@ -15,5 +15,16 @@
   "item.wardenpact.echo_hoe": "回响锄",
   "enchantment.wardenpact.contract_resonance": "契约共鸣",
   "enchantment.wardenpact.sculk_guard": "幽匿守护",
-  "enchantment.wardenpact.echo_mining": "回响采掘"
+  "enchantment.wardenpact.echo_mining": "回响采掘",
+  "item.wardenpact.sculk_reins": "幽匿缰绳",
+  "entity.wardenpact.sculk_mount": "幽匿战兽",
+  "entity.wardenpact.owned_sculk_mount": "%s 的幽匿战兽",
+  "message.wardenpact.mount_not_yours": "这只战兽属于另一位契约者。",
+  "message.wardenpact.mount_no_inventory": "幽匿战兽没有装备栏或储物空间。",
+  "message.wardenpact.mount_land_first": "请先落地，再解散坐骑。",
+  "message.wardenpact.mount_dismissed": "幽匿战兽已回归幽匿。",
+  "message.wardenpact.mount_dismount_first": "请先下坐骑，再使用缰绳召回。",
+  "message.wardenpact.mount_no_room": "附近没有安全落脚点：需要约 2 格宽、3 格高的空间。",
+  "message.wardenpact.mount_recalled": "幽匿战兽已召回身边。",
+  "message.wardenpact.mount_summoned": "幽匿战兽已响应契约！右键骑乘，空格蓄力跳跃。"
 }

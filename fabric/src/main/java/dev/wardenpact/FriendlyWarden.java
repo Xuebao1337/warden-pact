@@ -56,7 +56,7 @@ public final class FriendlyWarden extends Warden {
     }
 
     public static boolean isProtected(Entity entity) {
-        return entity instanceof Player || entity instanceof FriendlyWarden
+        return entity instanceof Player || entity instanceof FriendlyWarden || entity instanceof SculkMount
                 || entity instanceof TamableAnimal animal && animal.isTame();
     }
 

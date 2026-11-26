@@ -2,6 +2,6 @@
   "required": true,
   "package": "dev.wardenpact.mixin",
   "compatibilityLevel": "JAVA_25",
-  "mixins": ["LivingEntityMixin"],
+  "mixins": ["LivingEntityMixin", "ServerPlayerMixin"],
   "injectors": {"defaultRequire": 1}
 }

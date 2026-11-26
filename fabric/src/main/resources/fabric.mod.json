@@ -3,7 +3,7 @@
   "id": "wardenpact",
   "version": "${version}",
   "name": "Warden Pact",
-  "description": "Sword hits summon a friendly warden. Includes echo armor, tools and enchantments.",
+  "description": "Summon friendly wardens and a rideable sculk beast. Includes echo armor, tools and enchantments.",
   "license": "MIT",
   "environment": "*",
   "entrypoints": {
