@@ -1,0 +1,8 @@
+{
+  "item.wardenpact.summoning_sword": "坚守者召唤剑",
+  "entity.wardenpact.friendly_warden": "友方坚守者",
+  "entity.wardenpact.owned_warden": "%s 的坚守者",
+  "message.wardenpact.cooldown": "召唤冷却：还需 %s 秒",
+  "message.wardenpact.no_room": "附近没有足够的安全空间，坚守者需要约 3 格高的空间！",
+  "message.wardenpact.summoned": "友方坚守者已出战！持续 %s 秒，继续挥剑可指挥它攻击。"
+}

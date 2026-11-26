@@ -1,0 +1,11 @@
+license="MIT"
+[[mods]]
+modId="wardenpacttests"
+version="1.0.0"
+displayName="Warden Pact Game Tests"
+[[dependencies.wardenpacttests]]
+modId="wardenpact"
+type="required"
+versionRange="[1,)"
+ordering="AFTER"
+side="BOTH"

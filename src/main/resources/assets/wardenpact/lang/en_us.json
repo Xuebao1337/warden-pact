@@ -1,0 +1,8 @@
+{
+  "item.wardenpact.summoning_sword": "Warden Summoning Sword",
+  "entity.wardenpact.friendly_warden": "Friendly Warden",
+  "entity.wardenpact.owned_warden": "%s's Warden",
+  "message.wardenpact.cooldown": "Summon ready in %s seconds",
+  "message.wardenpact.no_room": "No safe space nearby! A warden needs about 3 blocks of headroom.",
+  "message.wardenpact.summoned": "Friendly warden summoned for %s seconds! Hit another monster to direct it."
+}
