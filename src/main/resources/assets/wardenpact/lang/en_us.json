@@ -26,5 +26,17 @@
   "message.wardenpact.mount_dismount_first": "Dismount before recalling your mount.",
   "message.wardenpact.mount_no_room": "No safe footing nearby: allow about 2 blocks of width and 3 blocks of headroom.",
   "message.wardenpact.mount_recalled": "Your sculk mount has been recalled.",
-  "message.wardenpact.mount_summoned": "Your sculk mount answers the pact! Right-click to ride and hold jump to charge."
+  "message.wardenpact.mount_summoned": "Your sculk mount answers the pact! Right-click to ride and hold jump to charge.",
+  "item.wardenpact.echo_helmet.ability": "Permanent Night Vision while worn; Sculk Sense: sneak to reveal monsters within 16 blocks for 5s; 8s cooldown",
+  "item.wardenpact.echo_chestplate.ability": "Echo Pulse: after a nearby monster hurts you, strike monsters within 4 blocks; 8s cooldown",
+  "item.wardenpact.echo_leggings.ability": "Sculk Stride: +15% movement speed while worn",
+  "item.wardenpact.echo_boots.ability": "Echo Cushion: 50% less fall damage while worn (vanilla rounding applies)",
+  "item.wardenpact.echo_pickaxe.ability": "Vein Resonance: mine up to 16 connected blocks of the same ore",
+  "item.wardenpact.echo_axe.ability": "Timber Resonance: fell up to 16 connected logs of the same kind",
+  "item.wardenpact.echo_shovel.ability": "Echo Paths: use on the top of the ground to flatten a 3x3 area",
+  "item.wardenpact.echo_hoe.ability": "Echo Farming: use on the top of the ground to till a 3x3 area",
+  "tooltip.wardenpact.echo_tool_controls": "Sneak + right-click in main hand: activate; 2s cooldown; durability per block",
+  "message.wardenpact.echo_sense": "Sculk Sense: %s monsters detected",
+  "message.wardenpact.echo_pulse": "Echo Pulse!",
+  "message.wardenpact.echo_tool": "Echo Resonance: affected %s blocks"
 }

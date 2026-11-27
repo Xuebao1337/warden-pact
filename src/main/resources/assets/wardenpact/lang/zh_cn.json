@@ -26,5 +26,17 @@
   "message.wardenpact.mount_dismount_first": "请先下坐骑，再使用缰绳召回。",
   "message.wardenpact.mount_no_room": "附近没有安全落脚点：需要约 2 格宽、3 格高的空间。",
   "message.wardenpact.mount_recalled": "幽匿战兽已召回身边。",
-  "message.wardenpact.mount_summoned": "幽匿战兽已响应契约！右键骑乘，空格蓄力跳跃。"
+  "message.wardenpact.mount_summoned": "幽匿战兽已响应契约！右键骑乘，空格蓄力跳跃。",
+  "item.wardenpact.echo_helmet.ability": "永久夜视：穿戴时持续生效；幽匿感知：蹲下侦测16格内怪物，发光5秒，冷却8秒",
+  "item.wardenpact.echo_chestplate.ability": "回响反震：受到近处怪物伤害后，反击4格内怪物，冷却8秒",
+  "item.wardenpact.echo_leggings.ability": "幽匿疾行：穿戴时移动速度提升15%",
+  "item.wardenpact.echo_boots.ability": "回响缓冲：穿戴时摔落伤害降低50%（按原版取整）",
+  "item.wardenpact.echo_pickaxe.ability": "矿脉共鸣：连锁采掘最多16块同种矿石",
+  "item.wardenpact.echo_axe.ability": "林木共鸣：连锁砍伐最多16块同种原木",
+  "item.wardenpact.echo_shovel.ability": "回响铺路：对地面顶部使用，处理3×3区域",
+  "item.wardenpact.echo_hoe.ability": "回响耕作：对地面顶部使用，处理3×3区域",
+  "tooltip.wardenpact.echo_tool_controls": "主手蹲下＋右键：发动技能，冷却2秒；逐块消耗耐久",
+  "message.wardenpact.echo_sense": "幽匿感知：侦测到 %s 个怪物",
+  "message.wardenpact.echo_pulse": "回响反震！",
+  "message.wardenpact.echo_tool": "回响共鸣：已处理 %s 个方块"
 }

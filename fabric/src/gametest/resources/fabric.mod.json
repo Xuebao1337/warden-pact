@@ -4,6 +4,6 @@
   "version": "1.0.0",
   "name": "Warden Pact Fabric Game Tests",
   "environment": "*",
-  "entrypoints": {"fabric-gametest": ["dev.wardenpact.test.PactGameTests"]},
+  "entrypoints": {"fabric-gametest": ["dev.wardenpact.test.PactGameTests", "dev.wardenpact.test.EchoGearGameTests"]},
   "depends": {"wardenpact": "*", "fabric-gametest-api-v1": "*"}
 }

@@ -21,6 +21,7 @@ abstract class LivingEntityMixin {
         float damage = before - self.getHealth() - self.getAbsorptionAmount();
         if (result && damage > 0) {
             WardenPact.SUMMONS.onSwordHit(self, source, damage);
+            WardenPact.GEAR.afterDamage(self, source, damage);
         }
         return result;
     }

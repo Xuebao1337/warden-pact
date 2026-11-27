@@ -3,6 +3,7 @@ package dev.wardenpact;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.core.Registry;
@@ -22,6 +23,7 @@ public final class WardenPact implements ModInitializer {
     public static final String MOD_ID = "wardenpact";
     public static final SummonHandler SUMMONS = new SummonHandler();
     public static final PactMounts MOUNTS = new PactMounts();
+    public static final EchoGearAbilities GEAR = new EchoGearAbilities();
     public static final Item SCULK_REINS = registerItem("sculk_reins", SculkReinsItem::new,
             new Item.Properties().stacksTo(1).rarity(Rarity.RARE).fireResistant());
     public static final Item SUMMONING_SWORD = registerItem("summoning_sword",
@@ -59,10 +61,12 @@ public final class WardenPact implements ModInitializer {
         FabricDefaultAttributeRegistry.register(FRIENDLY_WARDEN, Warden.createAttributes());
         FabricDefaultAttributeRegistry.register(SCULK_MOUNT, SculkMount.createMountAttributes());
         ServerLivingEntityEvents.ALLOW_DAMAGE.register(SUMMONS::allowDamage);
+        ServerTickEvents.END_SERVER_TICK.register(GEAR::tick);
         ServerLifecycleEvents.SERVER_STARTING.register(server -> PactConfig.load());
         ServerLifecycleEvents.SERVER_STOPPED.register(server -> {
             SUMMONS.clear();
             MOUNTS.clear();
+            GEAR.clear();
         });
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(entries -> {
             entries.accept(SUMMONING_SWORD);

@@ -60,7 +60,7 @@ import net.minecraft.util.ProblemReporter;
 /** Loaded only by runGameTestServer, never included in the distributed mod jar. */
 public final class PactGameTests {
     public static final String ID = "wardenpacttests";
-    private static ServerPlayer player(GameTestHelper h) {
+    static ServerPlayer player(GameTestHelper h) {
         h.getLevel().getServer().setDifficulty(Difficulty.NORMAL, true);
         ServerPlayer player = (ServerPlayer) h.makeMockServerPlayer(GameType.SURVIVAL);
         Connection connection = new Connection(PacketFlow.SERVERBOUND);
@@ -75,7 +75,7 @@ public final class PactGameTests {
         return player;
     }
 
-    private static Zombie zombie(GameTestHelper h, int x, int z) {
+    static Zombie zombie(GameTestHelper h, int x, int z) {
         Zombie zombie = h.spawn(EntityTypes.ZOMBIE, new BlockPos(x, 1, z));
         zombie.setNoAi(true);
         zombie.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Items.NETHERITE_HELMET));
