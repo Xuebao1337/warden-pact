@@ -1,6 +1,7 @@
 ### Gradle ###
 .tools/
 .gradle-user/
+.gradle-legacy/
 .local/
 .gradle
 build/

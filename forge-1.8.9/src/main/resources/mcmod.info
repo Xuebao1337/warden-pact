@@ -1,0 +1,12 @@
+[
+  {
+    "modid": "witherpact",
+    "name": "Wither Pact / 凋零契约",
+    "description": "Friendly wither summons, a flying wither mount, echo equipment and enchantments for Minecraft 1.8.9.",
+    "version": "1.0.0",
+    "mcversion": "1.8.9",
+    "authorList": ["Wither Pact contributors"],
+    "credits": "Minecraft and Forge belong to their respective authors.",
+    "dependencies": []
+  }
+]
