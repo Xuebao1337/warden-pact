@@ -1,0 +1,7 @@
+key.categories.witherdance=Wither Dance Party
+key.witherdance.toggle=Summon / dismiss wither dance crew
+entity.witherdance.dancing_wither.name=Dancing Wither
+message.witherdance.started=The %s-wither crew is dancing for %s seconds! Press the summon key again to dismiss.
+message.witherdance.dismissed=Dance crew dismissed.
+message.witherdance.cooldown=Wait a few seconds before starting another party.
+message.witherdance.no_room=The dance crew needs a larger open area with solid ground.

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "wardendance",
+  "version": "${version}",
+  "name": "Warden Dance",
+  "description": "Press G to summon five harmless dancing wardens. Press again to dismiss.",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.wardendance.WardenDance"
+    ],
+    "client": [
+      "dev.wardendance.client.WardenDanceClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": ">=0.167.0+26.3"
+  },
+  "license": "MIT"
+}

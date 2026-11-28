@@ -1,0 +1,23 @@
+{
+  "edition": "Warden Dance Party",
+  "mod_id": "wardendance",
+  "version": "1.0.0",
+  "minecraft": "26.3",
+  "loader": "Fabric Loader 0.20.1 / Fabric API 0.167.0+26.3",
+  "java": 25,
+  "jar": "wardendance-fabric-26.3-1.0.0.jar",
+  "bytes": 22312,
+  "sha256": "27fc2f58f00df0e064f30e5867bdcfc4b1d910ebeb94014f71314daf195c4414",
+  "dedicated_server_tests": {
+    "passed": 14,
+    "failed": 0
+  },
+  "model_animation_assertions": 605,
+  "archive_validation": {
+    "java25_classes": 9,
+    "no_bundled_tests_or_minecraft": true,
+    "language_keys_match": true
+  },
+  "manual_client_visual_and_key_test": "not performed",
+  "test_log": ".tools/dance-fabric/full-check.log"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "wardendancetests",
+  "version": "1.0.0",
+  "name": "Warden Dance GameTests",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-gametest": [
+      "dev.wardendance.test.DanceGameTests"
+    ]
+  },
+  "depends": {
+    "wardendance": "*",
+    "fabric-gametest-api-v1": "*"
+  }
+}

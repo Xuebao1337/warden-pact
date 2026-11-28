@@ -1,0 +1,74 @@
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net' }
+        maven { url = 'https://repo.maven.apache.org/maven2' }
+    }
+    dependencies { classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT' }
+}
+apply plugin: 'net.minecraftforge.gradle.forge'
+version = project.mod_version
+group = 'dev.witherdance'
+archivesBaseName = 'witherdance-forge-1.8.9'
+sourceCompatibility = targetCompatibility = '1.8'
+repositories {
+    maven { url = 'https://repo.maven.apache.org/maven2' }
+    maven { url = 'https://libraries.minecraft.net' }
+    maven { url = 'https://maven.minecraftforge.net' }
+}
+// ForgeGradle 2 predates the retirement of several HTTP Maven endpoints.
+repositories.all { repo ->
+    if (repo instanceof org.gradle.api.artifacts.repositories.MavenArtifactRepository) {
+        def address = repo.url.toString()
+        if (address.contains('repo1.maven.org')) repo.url = 'https://repo.maven.apache.org/maven2'
+        else if (address.contains('files.minecraftforge.net')) repo.url = 'https://maven.minecraftforge.net'
+        else if (address.startsWith('http://')) repo.url = address.replaceFirst('http://', 'https://')
+    }
+}
+minecraft {
+    version = '1.8.9-11.15.1.2318-1.8.9'
+    mappings = 'stable_22'
+    runDir = 'run'
+    makeObfSourceJar = false
+}
+tasks.withType(JavaCompile) { options.encoding = 'UTF-8' }
+processResources {
+    inputs.property 'version', project.version
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+        expand version: project.version
+    }
+    from(sourceSets.main.resources.srcDirs) { exclude 'mcmod.info' }
+}
+jar { from('../LICENSE') { into 'META-INF' } }
+
+// Optional integration test mod. Its classes are never included in the release.
+sourceSets {
+    smoke {
+        java.srcDir 'src/smoke/java'
+        compileClasspath = sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath = output + compileClasspath
+    }
+}
+task smokeJar(type: Jar, dependsOn: smokeClasses) {
+    classifier = 'smoke-tests'
+    from sourceSets.smoke.output
+}
+if (project.hasProperty('smoke')) {
+    task installSmoke(type: Copy, dependsOn: smokeJar) {
+        from smokeJar.archivePath
+        into 'run/mods'
+    }
+    afterEvaluate { runServer.dependsOn installSmoke }
+}
+sourceSets {
+    modelCheck {
+        java.srcDir 'src/modelCheck/java'
+        compileClasspath = sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath = output + compileClasspath
+    }
+}
+task checkDanceModel(type: JavaExec, dependsOn: modelCheckClasses) {
+    main = 'dev.witherdance.test.DanceModelCheck'
+    classpath = sourceSets.modelCheck.runtimeClasspath
+    systemProperty 'java.awt.headless', 'true'
+}

@@ -1,0 +1,42 @@
+{
+  "fabric": {
+    "project": "party-fabric-26.3",
+    "minecraft": "26.3",
+    "mod_id": "wardendance",
+    "version": "1.0.0",
+    "jar": "wardendance-fabric-26.3-1.0.0.jar",
+    "bytes": 22312,
+    "sha256": "27fc2f58f00df0e064f30e5867bdcfc4b1d910ebeb94014f71314daf195c4414",
+    "java_class_version": 69,
+    "class_count": 9,
+    "archive_crc_valid": true,
+    "no_bundled_tests_game_loader_or_equipment": true,
+    "language_keys_match": true,
+    "dedicated_server_tests": {
+      "passed": 14,
+      "failed": 0
+    },
+    "model_animation_assertions": 605,
+    "manual_client_visual_and_key_test": "not performed"
+  },
+  "forge": {
+    "project": "party-forge-1.8.9",
+    "minecraft": "1.8.9",
+    "mod_id": "witherdance",
+    "version": "1.0.0",
+    "jar": "witherdance-forge-1.8.9-1.0.0.jar",
+    "bytes": 23177,
+    "sha256": "063d560e9119a8ddd05d810a1469967f6afc55020f6f4852beb30b1a02b14d10",
+    "java_class_version": 52,
+    "class_count": 14,
+    "archive_crc_valid": true,
+    "no_bundled_tests_game_loader_or_equipment": true,
+    "language_keys_match": true,
+    "dedicated_server_tests": {
+      "passed": 59,
+      "failed": 0
+    },
+    "model_animation_assertions": 1222,
+    "manual_client_visual_and_key_test": "not performed"
+  }
+}

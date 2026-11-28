@@ -1,0 +1,16 @@
+{
+  "edition": "Wither Dance Party",
+  "mod_id": "witherdance",
+  "version": "1.0.0",
+  "minecraft": "1.8.9",
+  "loader": "Forge 11.15.1.2318",
+  "java": 8,
+  "jar": "witherdance-forge-1.8.9-1.0.0.jar",
+  "bytes": 23177,
+  "sha256": "063d560e9119a8ddd05d810a1469967f6afc55020f6f4852beb30b1a02b14d10",
+  "dedicated_server_tests": { "passed": 59, "failed": 0 },
+  "model_animation_assertions": 1222,
+  "smoke_report": "party-forge-1.8.9/run/witherdance-smoke-results.json",
+  "build_and_model_log": ".tools/dance-forge189/full-check.log",
+  "manual_client_visual_and_key_test": "not performed"
+}

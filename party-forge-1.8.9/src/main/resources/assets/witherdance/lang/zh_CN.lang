@@ -1,0 +1,7 @@
+key.categories.witherdance=凋零舞团
+key.witherdance.toggle=召唤 / 解散凋零舞团
+entity.witherdance.dancing_wither.name=蹦迪凋零
+message.witherdance.started=%s 只凋零开始跳舞，持续 %s 秒！再次按召唤键可解散。
+message.witherdance.dismissed=凋零舞团已解散。
+message.witherdance.cooldown=舞团休息中，请稍等几秒。
+message.witherdance.no_room=舞团需要更大、有坚实地面的空地。
