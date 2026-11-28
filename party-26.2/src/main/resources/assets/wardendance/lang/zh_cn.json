@@ -1,0 +1,10 @@
+{
+  "key.category.wardendance.party": "坚守者舞团",
+  "key.wardendance.dance": "召唤 / 解散坚守者舞团",
+  "entity.wardendance.dancing_warden": "蹦迪坚守者",
+  "entity.wardendance.dancer_name": "蹦迪牢大 %s 号",
+  "message.wardendance.started": "%s 只坚守者已就位！蹦迪 %s 秒，再按舞团键解散。",
+  "message.wardendance.dismissed": "舞团：下班！",
+  "message.wardendance.cooldown": "舞团正在喘气，请稍等片刻（召唤间隔 5 秒）。",
+  "message.wardendance.no_room": "这儿跳不开！请找附近有地面、头顶宽敞的空地。"
+}

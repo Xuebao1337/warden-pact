@@ -1,0 +1,56 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+version = mod_version
+group = 'dev.wardendance'
+base { archivesName = 'wardendance-neoforge-26.2' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+sourceSets {
+    gameTest {
+        compileClasspath += sourceSets.main.output
+        runtimeClasspath += sourceSets.main.output
+    }
+}
+neoForge {
+    version = project.neo_version
+    addModdingDependenciesTo sourceSets.gameTest
+    addModdingDependenciesTo sourceSets.test
+    runs {
+        client { client() }
+        server { server(); programArgument '--nogui' }
+        gameTestServer {
+            type = 'gameTestServer'
+            sourceSet = sourceSets.gameTest
+            gameDirectory = project.file('run/gametest')
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'wardendancetests'
+        }
+    }
+    mods {
+        wardendance { sourceSet(sourceSets.main) }
+        wardendancetests { sourceSet(sourceSets.gameTest) }
+    }
+    runs.client.loadedMods = [mods.wardendance]
+    runs.server.loadedMods = [mods.wardendance]
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.named('jar', Jar).configure { from('../LICENSE') { into 'META-INF' } }
+tasks.register('checkDanceAnimation', JavaExec) {
+    dependsOn tasks.named('testClasses')
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'dev.wardendance.test.DanceAnimationCheck'
+    javaLauncher = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(25) }
+}
+// This source set contains a standalone assertion runner, not JUnit test classes.
+tasks.named('test', Test).configure { failOnNoDiscoveredTests = false }
+tasks.named('check').configure { dependsOn tasks.named('checkDanceAnimation') }
+// GameTestServer does not consume client assets. Give its launcher a separate,
+// explicitly headless reference instead of downloading sound/texture objects.
+def headlessAssets = tasks.register('headlessAssets', WriteProperties) {
+    destinationFile = layout.buildDirectory.file('headless/assets.properties')
+    property 'asset_index', 'headless-unused'
+    property 'assets_root', layout.buildDirectory.dir('headless/assets').get().asFile.absolutePath
+}
+tasks.named('prepareGameTestServerRun').configure {
+    assetProperties = headlessAssets.flatMap { it.destinationFile }
+}

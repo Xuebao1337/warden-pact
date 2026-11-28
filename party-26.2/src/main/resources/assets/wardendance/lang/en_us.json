@@ -1,0 +1,10 @@
+{
+  "key.category.wardendance.party": "Warden Dance Party",
+  "key.wardendance.dance": "Summon / dismiss the warden dance crew",
+  "entity.wardendance.dancing_warden": "Dancing Warden",
+  "entity.wardendance.dancer_name": "DJ Warden #%s",
+  "message.wardendance.started": "%s wardens reporting for dance duty! %ss party; press the dance key again to dismiss.",
+  "message.wardendance.dismissed": "Dance crew: clocking out!",
+  "message.wardendance.cooldown": "The crew needs a breather. Summons have a 5-second cooldown.",
+  "message.wardendance.no_room": "Not enough dance floor! Find solid ground with plenty of headroom."
+}

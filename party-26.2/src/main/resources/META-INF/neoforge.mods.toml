@@ -1,0 +1,21 @@
+license="MIT"
+[[mods]]
+modId="wardendance"
+version="1.0.0"
+displayName="Warden Dance Party"
+description='''
+Press G to summon five harmless dancing wardens. Press again to dismiss them.
+A standalone silly edition for Minecraft Java 26.2 and NeoForge.
+'''
+[[dependencies.wardendance]]
+modId="neoforge"
+type="required"
+versionRange="[26.2.0.95,26.3)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.wardendance]]
+modId="minecraft"
+type="required"
+versionRange="[26.2]"
+ordering="NONE"
+side="BOTH"

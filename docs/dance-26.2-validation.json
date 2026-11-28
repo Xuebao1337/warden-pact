@@ -1,0 +1,23 @@
+{
+  "edition": "Warden Dance Party",
+  "mod_id": "wardendance",
+  "version": "1.0.0",
+  "minecraft": "26.2",
+  "loader": "NeoForge 26.2.0.95",
+  "java": 25,
+  "jar": "wardendance-neoforge-26.2-1.0.0.jar",
+  "bytes": 22290,
+  "sha256": "202089866eedd0269a70c3041cc8ec250ef85cc5536fdd4ce71668a37a10e399",
+  "dedicated_server_tests": {
+    "passed": 12,
+    "failed": 0
+  },
+  "model_animation_assertions": 605,
+  "archive_validation": {
+    "required_entries": 10,
+    "java25_classes": 9,
+    "no_bundled_tests_or_minecraft": true,
+    "language_keys_match": true
+  },
+  "manual_client_visual_and_key_test": "not performed"
+}

@@ -1,0 +1,11 @@
+license="MIT"
+[[mods]]
+modId="wardendancetests"
+version="1.0.0"
+displayName="Warden Dance Tests"
+[[dependencies.wardendancetests]]
+modId="wardendance"
+type="required"
+versionRange="[1,)"
+ordering="AFTER"
+side="BOTH"
